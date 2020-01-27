@@ -17,10 +17,12 @@
 
 package com.example.android.basicgesturedetect;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.FragmentTransaction;
 import android.view.Menu;
+import android.view.inputmethod.InputMethodManager;
 
 import com.example.android.common.activities.SampleActivityBase;
 import com.example.android.common.logger.Log;
@@ -54,6 +56,17 @@ public class MainActivity extends SampleActivityBase {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.toggleSoftInput(
+                //linearLayout.getApplicationWindowToken(),
+                InputMethodManager.SHOW_FORCED,
+                0);
         return true;
     }
 
