@@ -17,4 +17,10 @@
 
 <resources>
         <string name="sample_action">Clear Text</string>
+        <string name="airaction_label_scroll_down">Scroll down</string>
+        <string name="airaction_label_scroll_up">Scroll up</string>
+        <string name="airaction_label_next_chapter">Next chapter</string>
+        <string name="airaction_label_previous_chapter">Previous chapter</string>
+        <string name="airaction_label_show_info_page">Show info page</string>
+        <string name="airaction_label_read">Start reading (from info page)</string>
 </resources>

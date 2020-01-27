@@ -35,7 +35,11 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.samsung.android.support.REMOTE_ACTION" />
             </intent-filter>
+
+            <meta-data android:name="com.samsung.android.support.REMOTE_ACTION"
+                       android:resource="@xml/remote_action_for_reader"/>
         </activity>
     </application>
 
