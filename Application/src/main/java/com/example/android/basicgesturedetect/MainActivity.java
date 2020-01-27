@@ -21,6 +21,8 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.FragmentTransaction;
+
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.inputmethod.InputMethodManager;
 
@@ -68,6 +70,12 @@ public class MainActivity extends SampleActivityBase {
                 InputMethodManager.SHOW_FORCED,
                 0);
         return true;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        Log.i(TAG, "KeyDown (" + KeyEvent.keyCodeToString(keyCode) + ")");
+        return super.onKeyDown(keyCode, event);
     }
 
     /** Create a chain of targets that will receive log data */
