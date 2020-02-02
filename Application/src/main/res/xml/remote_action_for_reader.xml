@@ -9,7 +9,7 @@
         priority="1"
         repeatable="true"
         repeatable_interval="100"
-        trigger_key="PAGE_DOWN">
+        trigger_key="VOLUME_DOWN">
         <preference
             name="gesture"
             value="click|swipe_down" />
@@ -20,7 +20,7 @@
         priority="3"
         repeatable="true"
         repeatable_interval="100"
-        trigger_key="PAGE_UP">
+        trigger_key="VOLUME_UP">
         <preference
             name="gesture"
             value="double_click|swipe_up" />
@@ -47,6 +47,7 @@
             name="gesture"
             value="swipe_left" />
     </action>
+    <!--
     <action
         id="show_info_page"
         label="@string/airaction_label_show_info_page"
@@ -67,4 +68,5 @@
             name="gesture"
             value="circle_cw" />
     </action>
+    -->
 </remote-actions>
